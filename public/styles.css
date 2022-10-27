@@ -1,0 +1,41 @@
+/* Portfolio Site */
+
+a {
+  color: hsl(236, 100%, 50%);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:visited {
+  color: hsl(240, 90%, 55%);
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  bottom: 0;
+  inline-size: 100vw;
+  left: 0;
+  min-block-size: 40px;
+  position: fixed;
+}
+
+footer > p {
+  margin-inline-start: 1.5vw;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  min-block-size: 40px;
+}
+
+.flexItemNav {
+  margin-inline-start: 1.5vw;
+}
