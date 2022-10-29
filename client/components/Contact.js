@@ -34,48 +34,58 @@ const Contact = () => {
 
   return (
     <>
-      <h1>Contact</h1>
-      <form onSubmit={handleSubmit}>
 
-        <label htmlFor='firstName'>First Name</label>
-        <input 
-          id='firstName' 
-          name='firstName' 
-          type='text' 
-          value={firstName} 
-          onChange={handleChangeFirstName} 
-        />
+      <main id='containerMain'>
 
-        <label htmlFor='lastName'>Last Name</label>
-        <input 
-          id='lastName' 
-          name='lastName' 
-          type='text' 
-          value={lastName} 
-          onChange={handleChangeLastName} 
-        />
+        <h1>Contact</h1>
 
-        <label htmlFor='email'>Email Address</label>
-        <input 
-          id='email' 
-          name='email' 
-          type='email' 
-          value={email} 
-          onChange={handleChangeEmail} 
-        />
+        <form onSubmit={handleSubmit}>
 
-        <label htmlFor='message'>Message</label>
-        <textarea
-          id='message'
-          name='message'
-          type='text'
-          value={message}
-          onChange={handleChangeMessage}
-        />
+          <label htmlFor='firstName'>First Name</label>
+          <input 
+            id='firstName' 
+            name='firstName' 
+            type='text' 
+            value={firstName} 
+            onChange={handleChangeFirstName} 
+            required
+          />
 
-        <button>Submit</button>
+          <label htmlFor='lastName'>Last Name</label>
+          <input 
+            id='lastName' 
+            name='lastName' 
+            type='text' 
+            value={lastName} 
+            onChange={handleChangeLastName} 
+            required
+          />
 
-      </form>
+          <label htmlFor='email'>Email Address</label>
+          <input 
+            id='email' 
+            name='email' 
+            type='email' 
+            value={email} 
+            onChange={handleChangeEmail} 
+            required
+          />
+
+          <label htmlFor='message'>Message</label>
+          <textarea
+            id='message'
+            name='message'
+            type='text'
+            value={message}
+            onChange={handleChangeMessage}
+            required
+          />
+
+          <button>Submit</button>
+
+        </form>
+
+      </main>
 
       <Footer />
 

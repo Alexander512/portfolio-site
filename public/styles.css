@@ -18,18 +18,16 @@ a > img {
 
 body {
   font-family: Helvetica, sans-serif;
+  font-size: clamp(0.9em, 0.6em + 0.5vw, 1.5em);
   margin: 0;
   padding: 0;
 }
 
 footer {
   align-items: center;
-  bottom: 0;
   display: flex;
   inline-size: 100vw;
-  left: 0;
-  min-block-size: 40px;
-  position: fixed;
+  block-size: 40px;
 }
 
 footer > p {
@@ -37,18 +35,20 @@ footer > p {
   margin-inline-start: 1.5vw;
 }
 
-h1 {
+form {
   margin-inline-start: 1.5vw;
 }
 
-img {
-  block-size: 25vw;
-  margin-inline-start: 1.5vw;
-  margin-inline-end: 1.5vw;
+h1 {
+  margin: 0 1.5vw 0 1.5vw;
+  padding: 1.5vh 0 1.5vh 0;
 }
 
 input {
   display: block;
+  inline-size: 250px;
+  margin-block-start: 1vh;
+  margin-block-end: 0.75vh;
 }
 
 label {
@@ -58,11 +58,25 @@ label {
 nav {
   align-items: center;
   display: flex;
-  min-block-size: 40px;
+  block-size: 40px;
 }
 
 textarea {
+  block-size: 250px;
   display: block;
+  inline-size: 350px;
+  margin-block-start: 1vh;
+  margin-block-end: 0.75vh;
+}
+
+#containerAbout {
+  block-size: calc(100vh - 40px - 40px);
+  overflow-y: scroll;
+}
+
+#containerMain {
+  block-size: calc(100vh - 40px - 40px);
+  overflow-y: scroll;
 }
 
 #flexContainerAbout {
@@ -77,14 +91,14 @@ textarea {
   justify-content: center;
 }
 
-#flexContainerHome > h1 {
-  margin: 0;
+#flexContainerHome > p {
+  margin-inline-start: 1.5vw;
+  margin-inline-end: 1.5vw;
 }
 
 #flexContainerProjects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
 }
 
 .about {
@@ -97,10 +111,32 @@ textarea {
   border: 1px solid black;
   block-size: 60vh;
   inline-size: 25vw;
+  margin-block-start: 1vh;
+  margin-inline-start: 1.5vw;
+  margin-inline-end: 1.5vw;
   min-inline-size: 35ch;
   padding: 1vh 1vw 1vh 1vw;
 }
 
 .flexItemNav {
   margin-inline-start: 1.5vw;
+}
+
+.profile {
+  block-size: auto;
+  margin-inline-start: 1.5vw;
+  margin-inline-end: 1.5vw;
+  max-inline-size: 25vw;
+}
+
+@media (max-width: 700px) {
+  #flexContainerAbout {
+    flex-direction: column;
+  }
+  .card {
+    inline-size: 97vw;
+  }
+  .profile {
+    max-inline-size: 50vw;
+  }
 }

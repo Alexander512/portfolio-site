@@ -4,10 +4,10 @@ import Footer from './Footer';
 const About = () => {
   return (
     <>
-      <main>
+      <main id='containerAbout'>
         <h1>About Me</h1>
         <div id='flexContainerAbout'>
-          <img src='images/profile_picture.jpg' alt='A picture of me' />
+          <img className='profile' src='images/profile_picture.jpg' alt='A picture of me' />
           <div>
             <p className='about'>
               I've always been passionate about building things. I majored in engineering
