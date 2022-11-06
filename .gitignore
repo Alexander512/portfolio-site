@@ -3,4 +3,6 @@ node_modules
 public/index.js
 public/index.js.map
 
+.env
 .DS_Store
+
