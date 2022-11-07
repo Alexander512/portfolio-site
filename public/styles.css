@@ -1,13 +1,13 @@
 /* Portfolio Site */
 
 a {
-  color: hsl(236, 100%, 50%);
+  color: #0000FF;
   font-weight: bold;
   text-decoration: none;
 }
 
 a:visited {
-  color: hsl(240, 90%, 55%);
+  color: #0000FF;
 }
 
 a > img {
@@ -17,6 +17,9 @@ a > img {
 }
 
 body {
+  background-color: #E6E6E6;
+  box-sizing: border-box;
+  color: #000000;
   font-family: Helvetica, sans-serif;
   font-size: clamp(0.9em, 0.6em + 0.5vw, 1.5em);
   margin: 0;
@@ -25,18 +28,24 @@ body {
 
 footer {
   align-items: center;
+  background-color: #E6E6E6;
+  block-size: 40px;
+  bottom: 0;
   display: flex;
   inline-size: 100vw;
-  block-size: 40px;
+  left: 0;
+  position: fixed;
 }
 
 footer > p {
+  color: #000000;
   display: inline;
   margin-inline-start: 1.5vw;
 }
 
 form {
   margin-inline-start: 1.5vw;
+  margin-inline-end: 1.5vw;
 }
 
 h1 {
@@ -44,11 +53,19 @@ h1 {
   padding: 1.5vh 0 1.5vh 0;
 }
 
+h1.home {
+  margin: 40vh 0 0 0;
+  padding: 0;
+}
+
 input {
+  background-color: #E6E6E6;
+  border-radius: 5px;
   display: block;
-  inline-size: 250px;
+  inline-size: 25vw;
   margin-block-start: 1vh;
   margin-block-end: 0.75vh;
+  min-inline-size: 250px;
 }
 
 label {
@@ -57,43 +74,54 @@ label {
 
 nav {
   align-items: center;
-  display: flex;
+  background-color: #E6E6E6;
   block-size: 40px;
+  display: flex;
+  inline-size: 100vw;
+  left: 0;
+  position: fixed;
+  top: 0;
 }
 
 textarea {
-  block-size: 250px;
+  background-color: #E6E6E6;
+  block-size: 40vh;
+  border-radius: 5px;
   display: block;
-  inline-size: 350px;
+  inline-size: 50vw;
   margin-block-start: 1vh;
   margin-block-end: 0.75vh;
+  min-inline-size: 300px;
 }
 
 #containerAbout {
-  block-size: calc(100vh - 40px - 40px);
+  margin: 5vh 0 5vh 0;
   overflow-y: scroll;
 }
 
+#containerContact {
+  background-color: #0000FF;
+  border-radius: 5px;
+  color: #E6E6E6;
+  margin-inline-start: 1.5vw;
+  margin-inline-end: 1.5vw;
+  padding-block-start: 1.5vh;
+  padding-block-end: 1.5vh;
+}
+
 #containerMain {
-  block-size: calc(100vh - 40px - 40px);
+  margin: 5vh 0 5vh 0;
   overflow-y: scroll;
 }
 
 #flexContainerAbout {
+  background-color: #0000FF;
+  border-radius: 5px;
+  color: #E6E6E6;
   display: flex;
-}
-
-#flexContainerHome {
-  align-items: center;
-  block-size: calc(100vh - 40px - 40px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#flexContainerHome > p {
   margin-inline-start: 1.5vw;
   margin-inline-end: 1.5vw;
+  padding: 5vh 5vw 5vh 5vw;
 }
 
 #flexContainerProjects {
@@ -108,8 +136,10 @@ textarea {
 }
 
 .card {
-  border: 1px solid black;
+  background-color: #0000FF;
   block-size: 60vh;
+  border-radius: 5px;
+  color: #E6E6E6;
   inline-size: 25vw;
   margin-block-start: 1vh;
   margin-inline-start: 1.5vw;
@@ -122,6 +152,10 @@ textarea {
   margin-inline-start: 1.5vw;
 }
 
+.home {
+  text-align: center;
+}
+
 .profile {
   block-size: auto;
   margin-inline-start: 1.5vw;
@@ -129,14 +163,44 @@ textarea {
   max-inline-size: 25vw;
 }
 
-@media (max-width: 700px) {
-  #flexContainerAbout {
-    flex-direction: column;
-  }
+@media (max-width: 900px) {
   .card {
     inline-size: 97vw;
   }
+}
+
+@media (max-width: 800px) {
+  input {
+    inline-size: 50vw;
+  }
+  textarea {
+    inline-size: 50vw;
+  }
+  #flexContainerAbout {
+    flex-direction: column;
+  }
+  .about {
+    max-inline-size: 97vw;
+  }
   .profile {
-    max-inline-size: 50vw;
+    max-inline-size: 97vw;
+  }
+}
+
+@media (max-width: 600px) {
+  input {
+    inline-size: 92.5vw;
+  }
+  textarea {
+    inline-size: 92.5vw;
+  }
+  #flexContainerAbout {
+    flex-direction: column;
+  }
+  .about {
+    max-inline-size: 97vw;
+  }
+  .profile {
+    max-inline-size: 97vw;
   }
 }
