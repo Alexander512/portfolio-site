@@ -39,51 +39,55 @@ const Contact = () => {
 
         <h1>Contact</h1>
 
-        <form onSubmit={handleSubmit}>
+        <div id='containerContact'>
 
-          <label htmlFor='firstName'>First Name</label>
-          <input 
-            id='firstName' 
-            name='firstName' 
-            type='text' 
-            value={firstName} 
-            onChange={handleChangeFirstName} 
-            required
-          />
+          <form onSubmit={handleSubmit}>
 
-          <label htmlFor='lastName'>Last Name</label>
-          <input 
-            id='lastName' 
-            name='lastName' 
-            type='text' 
-            value={lastName} 
-            onChange={handleChangeLastName} 
-            required
-          />
+            <label htmlFor='firstName'>First Name</label>
+            <input 
+              id='firstName' 
+              name='firstName' 
+              type='text' 
+              value={firstName} 
+              onChange={handleChangeFirstName} 
+              required
+            />
 
-          <label htmlFor='email'>Email Address</label>
-          <input 
-            id='email' 
-            name='email' 
-            type='email' 
-            value={email} 
-            onChange={handleChangeEmail} 
-            required
-          />
+            <label htmlFor='lastName'>Last Name</label>
+            <input 
+              id='lastName' 
+              name='lastName' 
+              type='text' 
+              value={lastName} 
+              onChange={handleChangeLastName} 
+              required
+            />
 
-          <label htmlFor='message'>Message</label>
-          <textarea
-            id='message'
-            name='message'
-            type='text'
-            value={message}
-            onChange={handleChangeMessage}
-            required
-          />
+            <label htmlFor='email'>Email Address</label>
+            <input 
+              id='email' 
+              name='email' 
+              type='email' 
+              value={email} 
+              onChange={handleChangeEmail} 
+              required
+            />
 
-          <button>Submit</button>
+            <label htmlFor='message'>Message</label>
+            <textarea
+              id='message'
+              name='message'
+              type='text'
+              value={message}
+              onChange={handleChangeMessage}
+              required
+            />
 
-        </form>
+            <button>Submit</button>
+
+          </form>
+
+        </div>
 
       </main>
 
