@@ -60,7 +60,6 @@ h1.home {
 
 input {
   background-color: #E6E6E6;
-  border-radius: 5px;
   display: block;
   inline-size: 25vw;
   margin-block-start: 1vh;
@@ -86,7 +85,6 @@ nav {
 textarea {
   background-color: #E6E6E6;
   block-size: 40vh;
-  border-radius: 5px;
   display: block;
   inline-size: 50vw;
   margin-block-start: 1vh;
@@ -100,8 +98,7 @@ textarea {
 }
 
 #containerContact {
-  background-color: #0000FF;
-  border-radius: 5px;
+  background-color: #00008B;
   color: #E6E6E6;
   margin-inline-start: 1.5vw;
   margin-inline-end: 1.5vw;
@@ -115,8 +112,7 @@ textarea {
 }
 
 #flexContainerAbout {
-  background-color: #0000FF;
-  border-radius: 5px;
+  background-color: #00008B;
   color: #E6E6E6;
   display: flex;
   margin-inline-start: 1.5vw;
@@ -136,15 +132,14 @@ textarea {
 }
 
 .card {
-  background-color: #0000FF;
+  background-color: #00008B;
   block-size: 60vh;
-  border-radius: 5px;
   color: #E6E6E6;
-  inline-size: 25vw;
+  flex: 1 1 25%;
   margin-block-start: 1vh;
   margin-inline-start: 1.5vw;
   margin-inline-end: 1.5vw;
-  min-inline-size: 35ch;
+  min-inline-size: 250px;
   padding: 1vh 1vw 1vh 1vw;
 }
 
