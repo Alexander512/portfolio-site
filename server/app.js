@@ -2,7 +2,7 @@
 require('dotenv').config();
 
 const express = require('express');
-const mailer = require('./api/mailer');
+const mailer = require('./api');
 const path = require('path');
 const app = express();
 
