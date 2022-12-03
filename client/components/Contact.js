@@ -1,35 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import Footer from './Footer';
 
 const Contact = () => {
 
-  const [ firstName, setFirstName ] = useState('');
+  const [ input, setInput ] = useState({});
 
-  const [ lastName, setLastName ] = useState('');
+  const handleChange = (event) => {
+    setInput((prevState) => {
+      return { ...prevState, [event.target.name]: event.target.value }
+    });
+  }; 
 
-  const [ email, setEmail ] = useState('');
-
-  const [ message, setMessage ] = useState('');
-
-  const handleChangeFirstName = (event) => {
-    setFirstName(event.target.value);
-    console.log(event.target.value);
-  };
-
-  const handleChangeLastName = (event) => {
-    setLastName(event.target.value);
-  };
-
-  const handleChangeEmail = (event) => {
-    setEmail(event.target.value);
-  };
-
-  const handleChangeMessage = (event) => {
-    setMessage(event.target.value);
-  };
- 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
+    const response = await axios.post('/api/contact', input);
+    setInput({});
   }; 
 
   return (
@@ -39,55 +25,51 @@ const Contact = () => {
 
         <h1>Contact</h1>
 
-        <div id='containerContact'>
+        <form onSubmit={handleSubmit}>
 
-          <form onSubmit={handleSubmit}>
+          <label htmlFor='firstName'>First Name</label>
+          <input 
+            id='firstName' 
+            name='firstName' 
+            type='text' 
+            value={input.firstName || ''} 
+            onChange={handleChange} 
+            required
+          />
 
-            <label htmlFor='firstName'>First Name</label>
-            <input 
-              id='firstName' 
-              name='firstName' 
-              type='text' 
-              value={firstName} 
-              onChange={handleChangeFirstName} 
-              required
-            />
+          <label htmlFor='lastName'>Last Name</label>
+          <input 
+            id='lastName' 
+            name='lastName' 
+            type='text' 
+            value={input.lastName || ''} 
+            onChange={handleChange} 
+            required
+          />
 
-            <label htmlFor='lastName'>Last Name</label>
-            <input 
-              id='lastName' 
-              name='lastName' 
-              type='text' 
-              value={lastName} 
-              onChange={handleChangeLastName} 
-              required
-            />
+          <label htmlFor='email'>Email Address</label>
+          <input 
+            id='email' 
+            name='email' 
+            type='email' 
+            value={input.email || ''} 
+            onChange={handleChange} 
+            required
+          />
 
-            <label htmlFor='email'>Email Address</label>
-            <input 
-              id='email' 
-              name='email' 
-              type='email' 
-              value={email} 
-              onChange={handleChangeEmail} 
-              required
-            />
+          <label htmlFor='message'>Message</label>
+          <textarea
+            id='message'
+            name='message'
+            type='text'
+            value={input.message || ''}
+            onChange={handleChange}
+            required
+          />
 
-            <label htmlFor='message'>Message</label>
-            <textarea
-              id='message'
-              name='message'
-              type='text'
-              value={message}
-              onChange={handleChangeMessage}
-              required
-            />
+          <button>Submit</button>
 
-            <button>Submit</button>
-
-          </form>
-
-        </div>
+        </form>
 
       </main>
 
