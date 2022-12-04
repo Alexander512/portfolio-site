@@ -1,15 +1,14 @@
 import React from 'react';
+import Navigation from './Navigation';
 import Footer from './Footer';
 
 const Home = () => {
   return (
-    <>
-      <main>
-        <h1 className='home'>Alexander Stoisolovich</h1>
-        <p className='home'>A full stack engineer building modern single page applications</p>
-      </main>
+    <div id='containerHome'>
+      <Navigation />
+      <h1>ALEXANDER STOISOLOVICH</h1>
       <Footer />
-    </>
+    </div>
   );
 };
 

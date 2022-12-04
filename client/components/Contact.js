@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Navigation from './Navigation';
 import Footer from './Footer';
 
 const Contact = () => {
@@ -19,15 +20,14 @@ const Contact = () => {
   }; 
 
   return (
-    <>
+    <div id='containerContact'>
+      <Navigation />
 
-      <main id='containerMain'>
-
-        <h1>Contact</h1>
+      <h1>CONTACT</h1>
 
         <form onSubmit={handleSubmit}>
 
-          <label htmlFor='firstName'>First Name</label>
+          <label htmlFor='firstName'>FIRST NAME</label>
           <input 
             id='firstName' 
             name='firstName' 
@@ -37,7 +37,7 @@ const Contact = () => {
             required
           />
 
-          <label htmlFor='lastName'>Last Name</label>
+          <label htmlFor='lastName'>LAST NAME</label>
           <input 
             id='lastName' 
             name='lastName' 
@@ -47,7 +47,7 @@ const Contact = () => {
             required
           />
 
-          <label htmlFor='email'>Email Address</label>
+          <label htmlFor='email'>EMAIL ADDRESS</label>
           <input 
             id='email' 
             name='email' 
@@ -57,7 +57,7 @@ const Contact = () => {
             required
           />
 
-          <label htmlFor='message'>Message</label>
+          <label htmlFor='message'>MESSAGE</label>
           <textarea
             id='message'
             name='message'
@@ -67,15 +67,13 @@ const Contact = () => {
             required
           />
 
-          <button>Submit</button>
+          <button>SUBMIT</button>
 
         </form>
 
-      </main>
-
       <Footer />
 
-    </>
+    </div>
   );
 };
 
