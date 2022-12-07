@@ -14,8 +14,8 @@ const mailer = ({ firstName, lastName, email, message }) => {
   });
 
   const messageData = {
-    from: 'stoisolovich.a@gmail.com',
-    to: 'stoisolovich.a@gmail.com',
+    from: process.env.EMAIL,
+    to: process.env.EMAIL,
     subject: `message from: <${firstName} ${lastName}> email address: <${email}>`,
     text: `${message}`
   };
