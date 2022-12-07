@@ -7,6 +7,7 @@ const Home = () => {
     <div id='containerHome'>
       <Navigation />
       <h1>ALEXANDER STOISOLOVICH</h1>
+      <p>FULLSTACK WEB APPLICATIONS &nbsp;&nbsp;/&nbsp;&nbsp; ANALYTICS</p>
       <Footer />
     </div>
   );
