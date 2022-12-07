@@ -50,9 +50,9 @@ form {
 input {
   background-color: #C0C0C0;
   display: block;
+  inline-size: 35vw;
   margin-block-start: 1vh;
   margin-block-end: 0.75vh;
-  max-inline-size: 40vw;
   min-inline-size: 300px;
 }
 
@@ -75,9 +75,9 @@ textarea {
   background-color: #C0C0C0;
   block-size: 40vh;
   display: block;
+  inline-size: 35vw;
   margin-block-start: 1vh;
   margin-block-end: 0.75vh;
-  max-inline-size: 40vw;
   min-inline-size: 300px;
 }
 
