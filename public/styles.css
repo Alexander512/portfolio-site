@@ -184,7 +184,7 @@ textarea {
 }
 
 #containerContact > form {
-  grid-column: 1 / span 6;
+  grid-column: 1 / span 12;
   grid-row: 3 / span 5;
   overflow-y: scroll;
 }
