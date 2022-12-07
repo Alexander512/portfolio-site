@@ -98,7 +98,7 @@ textarea {
 }
 
 #containerHome > p {
-  grid-column: 1 / span 6;
+  grid-column: 1 / span 10;
   grid-row: 3;
   margin: 0 1.5vw 0 1.5vw;
 }
@@ -131,12 +131,14 @@ textarea {
   grid-column: 5 / span 6;
   grid-row: 3; 
   margin: 0;
+  max-inline-size: 65ch;
 }
 
 #p2 {
   grid-column: 5 / span 6;
   grid-row: 4;
   margin: 0;
+  max-inline-size: 65ch;
 }
 
 #containerProjects {
@@ -156,9 +158,12 @@ textarea {
 }
 
 #containerProjects > ul {
-  grid-column: 1 / span 6;
+  grid-column: 1 / span 10;
   grid-row: 3 / span 6;
   list-style-type: none;
+  margin: 0 0 40px 0;
+  max-inline-size: 65ch;
+  overflow-y: scroll;
   padding: 0 0 0 1.5vw;
 }
 
@@ -181,6 +186,7 @@ textarea {
 #containerContact > form {
   grid-column: 1 / span 6;
   grid-row: 3 / span 5;
+  overflow-y: scroll;
 }
 
 .flexItemNav {
@@ -188,7 +194,7 @@ textarea {
 }
 
 .project {
-  margin: 2.5vh 1.5vw 2.5vh 1.5vw;
+  margin: 3.0vh 1.5vw 3.0vh 1.5vw;
 }
 
 @media (max-width: 800px) {
@@ -198,13 +204,5 @@ textarea {
   textarea {
     inline-size: 50vw;
   }
-  #containerProjects > ul {
-    grid-column: 1 / span 8;
-  }
 }
 
-@media (max-width: 600px) {
-  #containerProjects > ul {
-    grid-column: 1 / span 10;
-  }
-}
