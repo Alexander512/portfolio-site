@@ -5,7 +5,12 @@ import Footer from './Footer';
 
 const Contact = () => {
 
-  const [ input, setInput ] = useState({});
+  const [ input, setInput ] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    message: '' 
+  });
 
   const handleChange = (event) => {
     setInput((prevState) => {
@@ -16,7 +21,12 @@ const Contact = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const response = await axios.post('/api/contact', input);
-    setInput({});
+    setInput({
+      firstName: '',
+      lastName: '',
+      email: '',
+      message: ''
+    });
   }; 
 
   return (
@@ -32,7 +42,7 @@ const Contact = () => {
             id='firstName' 
             name='firstName' 
             type='text' 
-            value={input.firstName || ''} 
+            value={input.firstName} 
             onChange={handleChange} 
             required
           />
@@ -42,7 +52,7 @@ const Contact = () => {
             id='lastName' 
             name='lastName' 
             type='text' 
-            value={input.lastName || ''} 
+            value={input.lastName} 
             onChange={handleChange} 
             required
           />
@@ -52,7 +62,7 @@ const Contact = () => {
             id='email' 
             name='email' 
             type='email' 
-            value={input.email || ''} 
+            value={input.email} 
             onChange={handleChange} 
             required
           />
@@ -62,7 +72,7 @@ const Contact = () => {
             id='message'
             name='message'
             type='text'
-            value={input.message || ''}
+            value={input.message}
             onChange={handleChange}
             required
           />
