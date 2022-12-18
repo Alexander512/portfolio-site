@@ -13,9 +13,9 @@ const Projects = () => {
             <li><strong>PORTFOLIO SITE</strong></li>
               <div className='project'>
                 <p>
-                  A portfolio site built with React focusing on 
-                  using functional components with hooks and responsive
-                  styling using CSS grid.
+                  A portfolio site built with React. All components are
+                  functional components with hooks for state management.
+                  The site is deployed via Heroku.
                 </p>
                 <a href='https://github.com/Alexander512/portfolio-site'>CODE ON GITHUB</a>
               </div>
@@ -33,14 +33,15 @@ const Projects = () => {
             <li><strong>THE MISSING VALUE</strong></li>
               <div className='project'>
                 <p>
-                  A JavaScript library for performing statistics. The focus of 
-                  this project is on fundamentals with the functions written in JavaScript, 
-                  unit testing with Mocha and Chai utilizing GitHub Actions, and
-                  documentation written in plain HTML and CSS with the site
+                  A JavaScript library for performing descriptive statistics with
+                  optional handling of missing values. The functions are written in 
+                  JavaScript, unit testing is done with Mocha and Chai via GitHub Actions, 
+                  and the documentation is written in HTML and CSS with the site
                   hosted on GitHub pages. 
                 </p>
                 <a href='https://github.com/Alexander512/the-missing-value'>CODE ON GITHUB</a><br />
-                <a href='https://alexander512.github.io/the-missing-value/'>DOCUMENTATION SITE</a>
+                <a href='https://alexander512.github.io/the-missing-value/'>DOCUMENTATION SITE</a><br />
+                <a href='https://www.npmjs.com/package/the-missing-value'>NPM</a>
               </div>
           </ul>
 
