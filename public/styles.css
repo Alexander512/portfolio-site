@@ -41,16 +41,6 @@ p {
   grid-row: 3;
 }
 
-#avatar {
-  block-size: 22.5vw;
-  grid-column: 1 / span 3;
-  grid-row: 3 / span 3;
-  inline-size: 22.5vw;
-  margin: 0 1.5vw 3vh 1.5vw;
-  min-block-size: 220px;
-  min-inline-size: 220px;
-}
-
 #card1 {
   grid-column: 1 / span 4;
   grid-row: 3 / span 5;
@@ -89,8 +79,9 @@ p {
 }
 
 #pAbout {
-  grid-column: 4 / span 6;
+  grid-column: 1 / span 6;
   grid-row: 3 / span 5; 
+  margin: 0 1.5vw 0 1.5vw;
   max-inline-size: 65ch;
 }
 
@@ -136,14 +127,9 @@ p {
     grid-column: 1 / span 8;
     grid-row: 3 / span 5;
   }
-  #avatar {
-    grid-column: 1 / span 12;
-    grid-row: 3 / span 3;
-  }
   #pAbout {
     grid-column: 1 / span 12;
-    grid-row: 5 / span 3; 
-    margin: 0 1.5vw 0 1.5vw;
+    grid-row: 3 / span 5; 
   }
 }
 

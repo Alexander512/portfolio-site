@@ -10,7 +10,6 @@ const About = () => {
     <div id='container'>
       <Navigation />
       <Typography variant='h3' component='h1'>ABOUT ME</Typography>
-      <Avatar alt='a picture of me' id='avatar' src='images/profile_picture.jpg' variant='square' />
       <Typography id='pAbout' variant='body1'>
         I've always been passionate about building things. I majored in engineering
         and was an engineer in the automotive and aerospace industries where
