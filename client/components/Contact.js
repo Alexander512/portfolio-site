@@ -36,7 +36,7 @@ const Contact = () => {
             margin='dense'
             size='small'
             variant='filled'
-            sx={{backgroundColor: '#FFFFFF', color: '#4D73FF'}}
+            sx={{backgroundColor: '#C0C0C0', color: '#4D73FF'}}
             value={input.firstName} 
             onChange={handleChange} 
             fullWidth
@@ -50,7 +50,7 @@ const Contact = () => {
             margin='dense'
             size='small'
             variant='filled'
-            sx={{backgroundColor: '#FFFFFF', color: '#4D73FF'}}
+            sx={{backgroundColor: '#C0C0C0', color: '#4D73FF'}}
             value={input.lastName} 
             onChange={handleChange} 
             fullWidth
@@ -65,7 +65,7 @@ const Contact = () => {
             size='small'
             type='email' 
             variant='filled'
-            sx={{backgroundColor: '#FFFFFF', color: '#4D73FF'}}
+            sx={{backgroundColor: '#C0C0C0', color: '#4D73FF'}}
             value={input.email} 
             onChange={handleChange} 
             fullWidth
@@ -80,7 +80,7 @@ const Contact = () => {
             size='small'
             variant='filled'
             rows={10}
-            sx={{backgroundColor: '#FFFFFF', color: '#4D73FF'}}
+            sx={{backgroundColor: '#C0C0C0', color: '#4D73FF'}}
             value={input.message}
             onChange={handleChange}
             fullWidth
