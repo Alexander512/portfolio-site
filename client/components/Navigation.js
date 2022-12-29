@@ -1,13 +1,23 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link as RouterLink } from 'react-router-dom';
+
+import Link from '@mui/material/Link';
 
 const Navigation = () => {
   return (
     <nav>
-      <Link className='flexItemNav' to='/'>HOME</Link>
-      <Link className='flexItemNav' to='/about'>ABOUT</Link>
-      <Link className='flexItemNav' to='/projects'>PROJECTS</Link>
-      <Link className='flexItemNav' to='/contact'>CONTACT</Link>
+      <Link component={RouterLink} sx={{color: '#4D73FF', marginInlineStart: '1.5vw', textDecoration: 'none'}} to='/'>
+        HOME
+      </Link>
+      <Link component={RouterLink} sx={{color: '#4D73FF', marginInlineStart: '1.5vw', textDecoration: 'none'}} to='/about'>
+        ABOUT
+      </Link>
+      <Link component={RouterLink} sx={{color: '#4D73FF', marginInlineStart: '1.5vw', textDecoration: 'none'}} to='/projects'>
+        PROJECTS
+      </Link>
+      <Link component={RouterLink} sx={{color: '#4D73FF', marginInlineStart: '1.5vw', textDecoration: 'none'}} to='/contact'>
+        CONTACT
+      </Link>
     </nav>
   );
 };
