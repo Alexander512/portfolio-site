@@ -46,9 +46,9 @@ p {
   grid-column: 1 / span 3;
   grid-row: 3 / span 3;
   inline-size: 22.5vw;
-  margin: 0 1.5vw 0 1.5vw;
-  min-block-size: 200px;
-  min-inline-size: 200px;
+  margin: 0 1.5vw 3vh 1.5vw;
+  min-block-size: 220px;
+  min-inline-size: 220px;
 }
 
 #card1 {
@@ -142,7 +142,7 @@ p {
   }
   #pAbout {
     grid-column: 1 / span 12;
-    grid-row: 5 / span 2; 
+    grid-row: 5 / span 3; 
     margin: 0 1.5vw 0 1.5vw;
   }
 }
