@@ -3,14 +3,13 @@ import axios from 'axios';
 import Navigation from './Navigation';
 import Footer from './Footer';
 
+import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
+import Typography from '@mui/material/Typography';
+
 const Contact = () => {
 
-  const [ input, setInput ] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    message: '' 
-  });
+  const [ input, setInput ] = useState({ firstName: '', lastName: '', email: '', message: '' });
 
   const handleChange = (event) => {
     setInput((prevState) => {
@@ -21,68 +20,80 @@ const Contact = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const response = await axios.post('/api/contact', input);
-    setInput({
-      firstName: '',
-      lastName: '',
-      email: '',
-      message: ''
-    });
+    setInput({ firstName: '', lastName: '', email: '', message: '' });
   }; 
 
   return (
-    <div id='containerContact'>
+    <div id='container'>
       <Navigation />
-
-      <h1>CONTACT</h1>
-
+      <Typography variant='h3' component='h1'>CONTACT</Typography>
         <form onSubmit={handleSubmit}>
 
-          <label htmlFor='firstName'>FIRST NAME</label>
-          <input 
+          <TextField 
             id='firstName' 
             name='firstName' 
-            type='text' 
+            label='FIRST NAME'
+            margin='dense'
+            size='small'
+            variant='filled'
+            sx={{backgroundColor: '#FFFFFF', color: '#4D73FF'}}
             value={input.firstName} 
             onChange={handleChange} 
+            fullWidth
             required
-          />
+          /><br />
 
-          <label htmlFor='lastName'>LAST NAME</label>
-          <input 
+          <TextField 
             id='lastName' 
             name='lastName' 
-            type='text' 
+            label='LAST NAME'
+            margin='dense'
+            size='small'
+            variant='filled'
+            sx={{backgroundColor: '#FFFFFF', color: '#4D73FF'}}
             value={input.lastName} 
             onChange={handleChange} 
+            fullWidth
             required
-          />
+          /><br />
 
-          <label htmlFor='email'>EMAIL ADDRESS</label>
-          <input 
+          <TextField 
             id='email' 
             name='email' 
+            label='EMAIL'
+            margin='dense'
+            size='small'
             type='email' 
+            variant='filled'
+            sx={{backgroundColor: '#FFFFFF', color: '#4D73FF'}}
             value={input.email} 
             onChange={handleChange} 
+            fullWidth
             required
-          />
+          /><br />
 
-          <label htmlFor='message'>MESSAGE</label>
-          <textarea
+          <TextField
             id='message'
             name='message'
-            type='text'
+            label='MESSAGE'
+            margin='dense'
+            size='small'
+            variant='filled'
+            rows={10}
+            sx={{backgroundColor: '#FFFFFF', color: '#4D73FF'}}
             value={input.message}
             onChange={handleChange}
+            fullWidth
+            multiline
             required
-          />
+          /><br />
 
-          <button>SUBMIT</button>
+          <Button sx={{backgroundColor: '#C0C0C0', color: '#000000'}} type='submit' variant='contained'>
+            SUBMIT
+          </Button>
 
         </form>
-
       <Footer />
-
     </div>
   );
 };
