@@ -37,7 +37,7 @@ nav {
 }
 
 p {
-  grid-column: 1 / span 8;
+  grid-column: 1 / span 12;
   grid-row: 3;
 }
 
@@ -77,7 +77,7 @@ p {
 #container > h1 {
   align-items: center;
   display: flex;
-  grid-column: 1 / span 8;
+  grid-column: 1 / span 12;
   grid-row: 2;
   margin: 0 1.5vw 0 1.5vw;
 }
