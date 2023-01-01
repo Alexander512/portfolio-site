@@ -26,6 +26,14 @@ form {
   justify-content: center;
 }
 
+#containerProjects {
+  align-items: center;
+  block-size: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #container > h1 {
   margin: 3vh 0 3vh 0;
 }
