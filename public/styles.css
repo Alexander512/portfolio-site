@@ -55,10 +55,6 @@ form {
   justify-content: center;
 }
 
-.text {
-  font-size: clamp(0.7em, 0.5em + 0.5vw, 1.5em);
-}
-
 @media (max-width: 900px) {
   #flexContainer {
     flex-direction: column;
