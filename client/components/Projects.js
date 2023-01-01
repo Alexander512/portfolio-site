@@ -1,28 +1,33 @@
 import React from 'react';
 
 import Card from '@mui/material/Card';
+import CardHeader from'@mui/material/CardHeader';
+import CardContent from '@mui/material/CardContent';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 
 const Projects = () => {
   return (
-    <div id='containerAdjustable'>
+    <section className='containerAdjustable'>
       <Typography variant='h4' component='h1'>PROJECTS</Typography>
+      <Link sx={{color: '#4D73FF', margin: '3vh 0 3vh 0', textDecoration: 'none'}} href='https://github.com/Alexander512'>
+        CODE AVAILABLE ON GITHUB 
+      </Link>
         <div id='flexContainer'>
-          <Card id='card1' className='card' sx={{backgroundColor: '#000000', color: '#C0C0C0'}}>
-            <Typography variant='h5' component='h2'>PORTFOLIO SITE</Typography>
+          <Card className='card' sx={{backgroundColor: '#000000', color: '#C0C0C0'}}>
+            <CardHeader title='PORTFOLIO SITE' />
+            <CardContent>
               <Typography variant='body1'>
                 A portfolio site built with React. All components are
                 functional components with hooks for state management.
                 Material UI components are utilized for styling. The 
                 site is deployed via Heroku.
               </Typography>
-              <Link sx={{color: '#4D73FF', textDecoration: 'none'}} href='https://github.com/Alexander512/portfolio-site'>
-                GITHUB
-              </Link>
+            </CardContent>
           </Card>
-          <Card id='card2' className='card' sx={{backgroundColor: '#000000', color: '#C0C0C0'}}>
-            <Typography variant='h5' component='h2'>HEALTH TRACKER</Typography>
+          <Card className='card' sx={{backgroundColor: '#000000', color: '#C0C0C0'}}>
+            <CardHeader title='HEALTH TRACKER' />
+            <CardContent>
               <Typography variant='body1'>
                 An analytics application for tracking health related data
                 such as heart rate, step count, and distance walked. The 
@@ -30,24 +35,21 @@ const Projects = () => {
                 and legacy class components. A Redux store was used for state 
                 management.
               </Typography>
-              <Link sx={{color: '#4D73FF', textDecoration: 'none'}} href='https://github.com/Alexander512/health_tracker'>
-                GITHUB
-              </Link>
+            </CardContent>
           </Card>
-          <Card id='card3' className='card' sx={{backgroundColor: '#000000', color: '#C0C0C0'}}>
-            <Typography variant='h5' component='h2'>THE MISSING VALUE</Typography>
+          <Card className='card' sx={{backgroundColor: '#000000', color: '#C0C0C0'}}>
+            <CardHeader title='THE MISSING VALUE' />
+            <CardContent>
               <Typography variant='body1'>
                 A JavaScript library for performing descriptive statistics with
                 optional removal of missing values. The functions are written in 
                 JavaScript, unit testing is done with Mocha and Chai, and the 
                 documentation is written in HTML and CSS. 
               </Typography>
-              <Link sx={{color: '#4D73FF', textDecoration: 'none'}} href='https://github.com/Alexander512/the-missing-value'>
-                GITHUB
-              </Link>
+            </CardContent>
           </Card>
         </div>
-    </div>
+    </section>
   );
 };
 

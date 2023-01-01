@@ -22,7 +22,7 @@ const Contact = () => {
   }; 
 
   return (
-    <div id='containerAdjustable'>
+    <section className='containerAdjustable'>
       <Typography variant='h4' component='h1'>CONTACT</Typography>
         <form onSubmit={handleSubmit}>
 
@@ -90,7 +90,7 @@ const Contact = () => {
           </Button>
 
         </form>
-    </div>
+    </section>
   );
 };
 
