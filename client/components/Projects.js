@@ -43,8 +43,7 @@ const Projects = () => {
               <Typography variant='body1'>
                 A JavaScript library for performing descriptive statistics with
                 optional removal of missing values. The functions are written in 
-                JavaScript, unit testing is done with Mocha and Chai, and the 
-                documentation is written in HTML and CSS. 
+                JavaScript, and unit testing is performed with Mocha and Chai.
               </Typography>
             </CardContent>
           </Card>
