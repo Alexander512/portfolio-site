@@ -26,6 +26,14 @@ form {
   justify-content: center;
 }
 
+#containerAbout {
+  align-items: center;
+  block-size: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #containerProjects {
   align-items: center;
   block-size: 100vh;
@@ -35,7 +43,7 @@ form {
 }
 
 #container > h1 {
-  margin: 3vh 0 3vh 0;
+  margin: 0 0 3vh 0;
 }
 
 #flexContainer {
@@ -44,7 +52,7 @@ form {
 }
 
 #pAbout {
-  margin: 0 25vw 0 25vw;
+  margin: 0 25vw 10vh 25vw;
   max-inline-size: 65ch;
 }
 
@@ -59,6 +67,9 @@ form {
 }
 
 @media (max-width: 900px) {
+  #containerAbout {
+    block-size: auto;
+  }
   #containerProjects {
     block-size: auto;
   }
@@ -76,7 +87,7 @@ form {
     margin: 0 10vw 0 10vw;
   }
   #pAbout {
-    margin: 0 10vw 0 10vw;
+    margin: 0 10vw 10vh 10vw;
   }
   .card {
     inline-size: 80vw;
