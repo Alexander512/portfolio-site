@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Navigation from './Navigation';
-import Footer from './Footer';
 
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
@@ -25,8 +23,7 @@ const Contact = () => {
 
   return (
     <div id='container'>
-      <Navigation />
-      <Typography variant='h3' component='h1'>CONTACT</Typography>
+      <Typography variant='h4' component='h1'>CONTACT</Typography>
         <form onSubmit={handleSubmit}>
 
           <TextField 
@@ -93,7 +90,6 @@ const Contact = () => {
           </Button>
 
         </form>
-      <Footer />
     </div>
   );
 };
