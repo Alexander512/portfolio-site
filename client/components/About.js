@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 
 const About = () => {
   return (
-    <div id='container'>
+    <div id='containerAbout'>
       <Typography variant='h4' component='h1'>ABOUT ME</Typography>
       <Avatar id='avatar' alt='picture of me' src='/images/profile_picture.jpg' variant='square' />
       <Typography id='pAbout' variant='body1'>
