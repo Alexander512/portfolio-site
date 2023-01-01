@@ -15,7 +15,7 @@ form {
 #avatar {
   block-size: 300px;
   inline-size: 300px;
-  margin: 0 0 3vh 0;
+  margin: 3vh 0 3vh 0;
 }
 
 #container {
