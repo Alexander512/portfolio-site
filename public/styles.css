@@ -56,27 +56,21 @@ form {
 }
 
 @media (max-width: 900px) {
-  #flexContainer {
-    flex-direction: column;
-  }
-  .card {
-    inline-size: 50vw;
-  }
-  .containerAdjustable {
-    block-size: auto;
-    margin: 0 0 10vh 0;
-  }
-}
-
-@media (max-width: 600px) {
   form {
     inline-size: 80vw;
     margin: 0 10vw 0 10vw;
+  }
+  #flexContainer {
+    flex-direction: column;
   }
   #pAbout {
     margin: 0 10vw 0 10vw;
   }
   .card {
     inline-size: 80vw;
+  }
+  .containerAdjustable {
+    block-size: auto;
+    margin: 0 0 10vh 0;
   }
 }
