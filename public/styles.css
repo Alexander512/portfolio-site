@@ -26,15 +26,7 @@ form {
   justify-content: center;
 }
 
-#containerAbout {
-  align-items: center;
-  block-size: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#containerProjects {
+#containerAdjustable {
   align-items: center;
   block-size: 100vh;
   display: flex;
@@ -67,10 +59,7 @@ form {
 }
 
 @media (max-width: 900px) {
-  #containerAbout {
-    block-size: auto;
-  }
-  #containerProjects {
+  #containerAdjustable {
     block-size: auto;
   }
   #flexContainer {

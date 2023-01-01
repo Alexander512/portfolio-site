@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 
 const Projects = () => {
   return (
-    <div id='containerProjects'>
+    <div id='containerAdjustable'>
       <Typography variant='h4' component='h1'>PROJECTS</Typography>
         <div id='flexContainer'>
           <Card id='card1' className='card' sx={{backgroundColor: '#000000', color: '#C0C0C0'}}>

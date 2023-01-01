@@ -22,7 +22,7 @@ const Contact = () => {
   }; 
 
   return (
-    <div id='container'>
+    <div id='containerAdjustable'>
       <Typography variant='h4' component='h1'>CONTACT</Typography>
         <form onSubmit={handleSubmit}>
 
