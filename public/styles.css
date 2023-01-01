@@ -26,14 +26,6 @@ form {
   justify-content: center;
 }
 
-#containerAdjustable {
-  align-items: center;
-  block-size: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 #container > h1 {
   margin: 0 0 3vh 0;
 }
@@ -44,14 +36,23 @@ form {
 }
 
 #pAbout {
-  margin: 0 25vw 10vh 25vw;
+  margin: 0 25vw 0 25vw;
   max-inline-size: 65ch;
 }
 
 .card {
+  block-size: auto;
   inline-size: 25vw;
   margin: 1.5vh 1.5vw 1.5vh 1.5vw;
   padding: 1vw;
+}
+
+.containerAdjustable {
+  align-items: center;
+  block-size: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .text {
@@ -59,14 +60,15 @@ form {
 }
 
 @media (max-width: 900px) {
-  #containerAdjustable {
-    block-size: auto;
-  }
   #flexContainer {
     flex-direction: column;
   }
   .card {
     inline-size: 50vw;
+  }
+  .containerAdjustable {
+    block-size: auto;
+    margin: 0 0 10vh 0;
   }
 }
 
@@ -76,7 +78,7 @@ form {
     margin: 0 10vw 0 10vw;
   }
   #pAbout {
-    margin: 0 10vw 10vh 10vw;
+    margin: 0 10vw 0 10vw;
   }
   .card {
     inline-size: 80vw;

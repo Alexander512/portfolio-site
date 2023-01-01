@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 
 const About = () => {
   return (
-    <div id='containerAdjustable'>
+    <section className='containerAdjustable'>
       <Typography variant='h4' component='h1'>ABOUT ME</Typography>
       <Avatar id='avatar' alt='picture of me' src='/images/profile_picture.jpg' variant='square' />
       <Typography id='pAbout' variant='body1'>
@@ -19,7 +19,7 @@ const About = () => {
         software and understand the benefits high quality software can bring
         to a business.
       </Typography>
-    </div>
+    </section>
   );
 };
 
