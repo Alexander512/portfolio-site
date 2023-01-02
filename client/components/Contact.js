@@ -33,7 +33,8 @@ const Contact = () => {
             margin='dense'
             size='small'
             variant='filled'
-            sx={{backgroundColor: '#C0C0C0', color: '#4D73FF'}}
+            sx={{backgroundColor: '#C0C0C0', '& label.Mui-focused': {color: '#000000'}}}
+            InputProps={{disableUnderline: true}}
             value={input.firstName} 
             onChange={handleChange} 
             fullWidth
@@ -47,7 +48,8 @@ const Contact = () => {
             margin='dense'
             size='small'
             variant='filled'
-            sx={{backgroundColor: '#C0C0C0', color: '#4D73FF'}}
+            sx={{backgroundColor: '#C0C0C0', '& label.Mui-focused': {color: '#000000'}}}
+            InputProps={{disableUnderline: true}}
             value={input.lastName} 
             onChange={handleChange} 
             fullWidth
@@ -62,7 +64,8 @@ const Contact = () => {
             size='small'
             type='email' 
             variant='filled'
-            sx={{backgroundColor: '#C0C0C0', color: '#4D73FF'}}
+            sx={{backgroundColor: '#C0C0C0', '& label.Mui-focused': {color: '#000000'}}}
+            InputProps={{disableUnderline: true}}
             value={input.email} 
             onChange={handleChange} 
             fullWidth
@@ -77,7 +80,8 @@ const Contact = () => {
             size='small'
             variant='filled'
             rows={10}
-            sx={{backgroundColor: '#C0C0C0', color: '#4D73FF'}}
+            sx={{backgroundColor: '#C0C0C0', '& label.Mui-focused': {color: '#000000'}}}
+            InputProps={{disableUnderline: true}}
             value={input.message}
             onChange={handleChange}
             fullWidth
@@ -85,7 +89,11 @@ const Contact = () => {
             required
           /><br />
 
-          <Button sx={{backgroundColor: '#C0C0C0', color: '#000000'}} type='submit' variant='contained'>
+          <Button 
+            sx={{backgroundColor: '#C0C0C0', color: '#000000', '&:hover': {backgroundColor: '#C0C0C0'}}} 
+            type='submit' 
+            variant='contained'
+          >
             SUBMIT
           </Button>
 
