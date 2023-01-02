@@ -29,11 +29,9 @@ const Projects = () => {
             <CardHeader title='HEALTH TRACKER' />
             <CardContent>
               <Typography variant='body1'>
-                An analytics application for tracking health related data
-                such as heart rate, step count, and distance walked. The 
+                An analytics application for tracking health related data. The 
                 application was built with React and utilized both functional
-                and legacy class components. A Redux store was used for state 
-                management.
+                and class components. A Redux store was used for state management.
               </Typography>
             </CardContent>
           </Card>
